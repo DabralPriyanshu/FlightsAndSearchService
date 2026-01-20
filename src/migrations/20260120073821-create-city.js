@@ -12,7 +12,8 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
-        allowNull: false, //on database level constrain
+        allowNull: false,
+        unique: true, //on database level constrain
       },
       createdAt: {
         allowNull: false,
