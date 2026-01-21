@@ -1,7 +1,11 @@
 const express = require("express");
+
 const { PORT } = require("./config/serverConfig");
+
 const db = require("./models/index");
+
 const apiRoutes = require("./routes/index");
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

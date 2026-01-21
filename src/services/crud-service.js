@@ -4,8 +4,6 @@ class CrudService {
   }
   async create(data) {
     try {
-      console.log(this.repository);
-      console.log("data in crud service", data);
       const response = await this.repository.create(data);
       return response;
     } catch (error) {
